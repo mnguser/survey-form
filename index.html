@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">  
+ <head>
+<style>
+    body {
+        background-color: lightblue;
+        font-family: sans-serif;
+        padding-left: 20%;
+        padding-right: 20%;
+        color: #FF8C00; 
+    }
+    label {
+        font-size: 18px;
+        display: block;
+        padding-bottom: 20px;
+        width: 100%
+    }
+    #number{
+        width: 10%;
+    }
+select {
+    display: block;
+    width: 20%;
+    padding-bottom: 10px;
+}
+textarea{
+display: inline-block;
+    width: 100%;
+    padding-bottom: 10px;
+}
+input{
+    display: inline-block;
+    width: 40%;
+}
+form {
+    background-color: #00008B;
+    padding: 40px 40px 40px 40px;
+}
+
+#button-area {
+  float: left;
+  width: 50%;
+  height: 50%;
+}
+
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -28px;
+  padding-left : 28px;
+}
+    </style>
+ </head>
+ <body>   
+<h1 id="title"> Tupac Survey</h1>
+<p id="description"> Tell us what you think about Tupac</p>
+
+
+<form id="survey-form">
+        <label id="name-label">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Full Name">
+    <div><br>
+        <label id="email-label">Email</label>
+        <input type="email" id="email" name="email"required placeholder="Email">
+    </div>
+    <div><br>
+        <label id="number-label">Age</label>
+        <input type="number" id="number" name="number" min="0" max="99"required placeholder="age">
+    </div>
+        <div><br>
+        <label for="rapper">Choose other favorite rapper:</label>
+        <select id="dropdown" name="cars">
+          <option value="biggie smalls">Biggie Smalls</option>
+          <option value="ice cube">Ice Cube</option>
+          <option value="eazy-e">Eazy-E</option>
+          <option value="snoop dog">Snoop Dog</option>
+        </select>
+    </div>
+
+       
+    
+        <div id="button-area"><br>
+            <label id="gender-label">Gender:</label>
+            <input type="radio" class="radio-inline" name="gender" value="male"> Male<br>
+            <input type="radio" class="radio-inline" name="gender" value="female"> Female<br>
+            <input type="radio" class="radio-inline" name="gender" value="other"> Other
+        </div>
+        
+        <div id="button-area"><br>
+            <label id="transport-type-label">Transport Type</label>
+            <input type="checkbox"  name="vehicle1" value="Bike">I have a bike<br>
+            <input type="checkbox"  name="vehicle2" value="Car">I have a car<br>
+            <input type="checkbox"  name="vehicle3" value="Boat">I have a boat<br>
+        </div>
+        
+       
+        <textarea name="comment" form="usrform">Additional Comments</textarea><br>
+        
+        
+        <input type="submit" value="submit" id="submit">
+</form>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+ </body>
+ </html>
